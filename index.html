@@ -1,0 +1,612 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin:0;
+            padding:0;
+            font-family:arial, sans-serif;
+        }
+        .main-pagediv{
+            width:1000px;
+            border:60px solid rgb(0,190,0);
+            margin:0 auto;
+        }
+        .page-div{
+            width:1000px;
+            margin:0 auto;
+            box-shadow:0px 0px 15px 2px black;
+        }
+         .nav-container{
+            width:1600px;
+            height:65px;
+            display:flex; 
+            margin-left:101px;
+            justify-content:space-evenly;
+            align-items:center;
+            margin:0;
+        }
+        .logo-container{
+            height:65px;
+            width:100%;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+        }
+        .main-div{
+            display:flex;
+            background-image:url("website-image.avif");
+            height:500px;
+            background-size:cover;
+        }
+        li{
+            list-style:none;
+        }
+        a{
+            text-decoration:none;
+            color:white;
+            font-size:small;
+        }
+        .logo{
+            color:rgb(0,120,0);
+            font-weight:bold;
+            font-size:40px;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serifmonospace;
+        }
+        .hero{
+        margin-top:-400px;
+        display:flex;
+        justify-content:center;
+        }
+        h1{
+            color:white;
+            font-size:70px;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serifmonospace;
+        }
+        .text1{
+            display:flex;
+            justify-content:center;
+            color:white;
+            font-size:small;
+        }
+        .text2{
+            color:white;
+            display:flex;
+            justify-content:center;
+            font-size:small;
+        }
+        .button-div{
+            display:flex;
+            justify-content:center;
+        }
+        .button{
+            height:30px;
+            width:150px;
+            font-weight:bold;
+            background-color:rgb(0,120,0);
+            color:white;
+            border:0;
+        }
+        .content-area1{
+            height:700px;
+            background-color:rgba(245,245,220,1);
+        }
+        .heading-about{
+            height:70px;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            margin-top:142px;
+            font-weight:bold;
+            font-size:25px;
+            text-decoration:dashed underline;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serifmonospace;
+        }
+        .text3{
+            display:flex;
+            justify-content:center;
+            font-size:small;
+        }
+        .text4{
+            display:flex;
+            justify-content:center;
+            font-size:small;
+        }
+         .image234-container{
+            height:300px;
+            width:900px;
+            margin:0 auto;
+            display:flex;
+            justify-content:space-evenly;
+        }
+        .image1-container{
+            height:230px;
+            width:820px;
+            margin:0 auto;
+            display:flex;
+            justify-content:start;
+            align-items:center; 
+            font-size:small;
+        }
+        .content-image1{
+            height:180px;
+            width:350px;
+            background-image:url("download.jpg");
+            background-size:cover;
+        }
+        .content-heading{
+            width:300px;
+            height:200px;
+            padding:20px;
+            justify-content:start;
+        }
+        h2{
+            color:rgb(0,120,0);
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serifmonospace;
+        }
+         .image2-card{
+            height:300px;
+            width:250px;
+            background-color:white;
+        }
+        .content-image2{
+            height:110px;
+            width:250px;
+            background-image:url("table.jpg");
+            background-size:cover;
+        }
+        .h5{
+            display:flex;
+            justify-content: center;
+        }
+        h5{
+            display:flex;
+            justify-content: center;
+        }
+        .area1-p{
+            width:150px;
+            font-size:small;
+            margin:0 auto;
+        }
+        .image3-card{
+            height:300px;
+            width:250px;
+            background-color:white;
+        }
+        .content-image3{
+            height:110px;
+            width:250px;
+            background-image:url("images.jpg");
+        }
+        .image4-card{
+            height:300px;
+            width:250px;
+            background-color:white;
+        }
+        .content-image4{
+            height:110px;
+            width:250px;
+            background-image:url("images\ \(1\).jpg");
+        }
+        .cardbtn-div{
+            display:flex;
+            justify-content:center;
+        }
+        .readmore-btn{
+            height:25px;
+            width:100px;
+            background-color:rgb(0,120,0);
+            color:white;
+            border:0;
+        }
+        .main-contentareadiv{
+            background-color:white;
+        }
+        .heading-services{  
+             height:70px;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            font-weight:bold;
+            font-size:25px;
+            text-decoration:dashed underline;
+            color:black;
+            margin:0;
+        }
+        .area2-text{
+            display:flex;
+            justify-content:center;
+            font-size:small;
+        }
+        .contentarea2{
+            margin:0 auto;
+            display:flex;
+            justify-content:space-evenly;
+            margin-top:30px;
+            background-color:white;
+        }
+        .area2-imagecard1{
+            width:200px;
+            height:210px;
+        }
+        .area2-image1{
+            width:110px;
+            height:100px;
+            background-image:url("moniter.png");
+            background-size:cover;
+            margin:0 auto;
+        }
+        .area2-imagecard2{
+             width:200px;
+            height:210px;
+        }
+        .area2-image2{
+             width:110px;
+            height:100px;
+            background-image:url("laptop.png");
+            background-size:cover;
+            margin:0 auto;
+        }
+        .area2-imagecard3{
+              width:200px;
+            height:210px;
+        }
+        .area2-image3{
+              width:110px;
+            height:108px;
+            background-image:url("mobile.png");
+            background-size:cover;
+            margin:0 auto;
+        }
+        .area2-imagecard4{
+               width:200px;
+            height:210px;
+        }
+        .area2-image4{
+               width:110px;
+            height:108px;
+            background-image:url("mobile.png");
+            background-size:cover;
+            margin:0 auto;
+        }
+        .area2-p{
+            font-size:small;
+            text-align:center;
+            background-color:white;
+        }
+        .content-area3{
+            height:200px;
+            width:100%;
+            background-color:rgb(0,180,0);
+            margin-top:25px;
+        }
+        .heading-action{
+              height:70px;
+            display:flex;
+            justify-content:center;
+            align-items:flex-end;
+            font-size:25px;
+            text-decoration:dashed underline;
+            color:white;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serifmonospace;
+        }
+        .area3-text{
+            display:flex;
+            justify-content:center;
+            font-size:small;
+            color:white;
+        }
+        .area3-btndiv{
+            height:80px;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+        }
+        .area3-btn{
+            height:25px;
+            width:150px;
+            color:rgb(0,120,0);
+            border:0;
+        }
+        .links:hover{
+            color:rgb(0,200,0);
+            font-size:14px;
+        }
+        .readmore-btn:hover{
+             background-color:rgb(0,180,0);
+        }
+        .button:hover{
+            background-color:rgb(0,180,0);
+        }
+        .area3-btn:hover{
+            background-color:rgb(0,100,0);
+            color:white;
+        }
+        .content-area4{
+            height:100vh;
+        }
+        .heading-pricing{
+             height:70px;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            font-weight:bold;
+            font-size:25px;
+            text-decoration:dashed underline;
+            color:black;
+            margin:0;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serifmonospace;
+        }
+        .area4-p{
+            text-align:center;
+        }
+        .price-div{
+            width:800px;
+            margin:0 auto;
+            display:flex;
+            justify-content:space-evenly;
+        }
+        .silver{
+            width:150px;
+            height:120px;
+            background-color:rgb(0,0,0);
+            margin-top:20px;
+            color:white;
+            text-align:center;
+            font-size:x-large;
+        }
+        .gold{
+            width:150px;
+            height:120px;
+            background-color:rgb(0,180,0);
+            color:white;
+            text-align:center;
+            font-size:x-large;
+        }
+        .platinum{
+            width:150px;
+            height:120px;
+            background-color:rgb(0,0,0);
+            margin-top:20px;
+            color:white;
+            text-align:center;
+            font-size:x-large;
+        }
+         @media(max-width:431px){
+            .image234-container{
+              justify-content:space-evenly;  
+            }
+        }
+        @media(max-width:431px){
+            .image1-container{
+                width:820px;
+            }
+        }
+        @media(max-width:431px){
+            .logo{
+                font-size:27px;
+                font-weight:bolder;
+            }
+        }
+        @media(max-width:431px){
+            .contentarea2{
+                justify-content:space-evenly;
+            }
+        }
+       @media(max-width:431px){
+        .heading-about{
+            font-size:30px;
+        }
+       }
+       @media(max-width:431px){
+        .heading-services{
+            font-size:30px;
+        }
+       }
+       @media(max-width:431px){
+        .heading-action{
+            font-size:30px;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serifmonospace;
+        }
+       }
+       @media(max-width:431px){
+        .h5{
+         font-size:20px;
+         margin-bottom:8px;
+         margin-top:20px;
+         font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serifmonospace;
+        }
+       }
+       @media(max-width:431px){
+        h5{
+            font-size:20px;
+            margin-top:10px;
+            margin-bottom:10px;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serifmonospace;
+        }
+       }
+       @media(max-width:431px){
+        .button{
+            width:180px;
+            height:40px;
+            font-size:medium;
+        }
+       }
+       @media(max-width:431px){
+        .welcome-heading{
+            font-size:xx-large;
+            margin-bottom:8px;
+            margin-top:5px;
+        }
+       }
+       @media(max-width:431px){
+        .area3-btn{
+            width:180px;
+            height:35px;
+        }
+       }
+       @media(max-width:431px){
+        .text1{
+            font-size:medium;
+        }
+       }
+        @media(max-width:431px){
+        .text2{
+            font-size:medium;
+        }
+       }
+        @media(max-width:431px){
+        .text3{
+            font-size:medium;
+        }
+       }
+        @media(max-width:431px){
+        .text4{
+            font-size:medium;
+        }
+       }
+        @media(max-width:431px){
+        .area2-text{
+            font-size:medium;
+        }
+       }
+       @media(max-width:431px){
+        .content-area4{
+            height:480px;
+        }
+       }
+       @media(max-width:431px){
+        .heading-pricing{
+            font-size:30px;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serifmonospace;
+        }
+       }
+       @media(max-width:431px){
+        .area4-p{
+            font-size:medium;
+        }
+        }
+         @media(max-width:431px){
+        .area3-text{
+            font-size:medium;
+        }
+        }
+         @media(max-width:431px){
+        .content-area3{
+            height:240px;
+        }
+        }
+    </style>
+</head>
+<body>
+    <div class="main-pagediv"><!--"main page div" open-->    
+        <div class="page-div"><!--"Main page div" open-->  
+            <div class="main-div">
+                <div class="logo-container"><a class="logo">EVERGREEN</a></div>
+                    <ul class="nav-container">
+                        <li><a href="#" class="links">HOME</a></li>
+                        <li><a href="#" class="links">ABOUT</a></li>
+                        <li><a href="#" class="links">SERVICES</a></li>
+                        <li><a href="#" class="links">PORTFOLIO</a></li>
+                        <li><a href="#" class="links">PRICE</a></li>
+                        <li><a href="#" class="links">DROPDOWN</a></li>
+                        <li><a href="#" class="links">CONTACT</a></li>
+                    </ul>
+            </div>
+    <div class="hero"><h1>Web Development</h1></div>
+<div class="text1">
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur ipsam quod suscipit delectus,
+</div>
+<div class="text2"> 
+     blanditiis iste dicta architecto beatae quis provident quo  nihil error inventore ducimus.
+</div><br>
+<div class="button-div">
+    <button class="button" href="#">GET STARTED</button>
+</div>
+    <div class="content-area1"><!--"About" div open-->
+        <div class="heading-about">
+            ABOUT US
+        </div>
+        <div class="text3">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur ipsam quod suscipit delectus,<br>
+        </div>
+        <div class="text4">
+        blanditiis iste dicta architecto beatae quis provident quo  nihil error inventore ducimus.
+        </div>
+<div class="image1-container"> 
+<div class="content-image1"></div>
+<div class="content-heading"><h2 class="welcome-heading">Welcome to Our Site</h2>
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore incidunt, mollitia possimus dolor nulla voluptates illum sunt illo error quisquam asperiores deleniti harum, eius ipsam nisi!<p></p><br>
+        <div><button class="readmore-btn">Read More</button></div>
+</div>
+</div> 
+<div class="image234-container">
+    <div class="image2-card">
+    <div class="content-image2"></div>
+    <h5 class="h5">Our Mission</h5>
+    <p class="area1-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident fuga qui, vel laborum doloribus pariatur.</p><br>
+    <div class="cardbtn-div"><button class="readmore-btn">Read More</button></div>
+    </div>
+    <div class="image3-card">
+    <div class="content-image3"></div>
+    <h5 class="h5">Our vision</h5>
+    <p class="area1-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident fuga qui, vel laborum doloribus pariatur.</p><br>
+        <div class="cardbtn-div"><button class="readmore-btn">Read More</button></div>
+    </div>
+    <div class="image4-card">
+    <div class="content-image4"></div>
+    <h5 class="h5">Our Objective</h5>
+    <p class="area1-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident fuga qui, vel laborum doloribus pariatur.</p><br>
+        <div class="cardbtn-div"><button class="readmore-btn">Read More</button></div>
+    </div>
+</div><!--About div end-->
+</div><!--Services div start-->
+<div class="main-contentareadiv">
+<div class="services-div"><h2 class="heading-services">SERVICES</h2></div>
+    <div class="area2-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur ipsam quod suscipit delectus,</div>
+    <div class="area2-text">blanditiis iste dicta architecto beatae quis provident quo  nihil error inventore ducimus.</div>
+<div class="contentarea2">
+     <div class="area2-imagecard1">
+    <div class="area2-image1"></div>
+    <h5 class="area2-h5">Web Design</h5>
+    <p class="area2-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident fuga qui.</p>
+    </div>
+      <div class="area2-imagecard2">
+    <div class="area2-image2"></div>
+    <h5 class="area2-h5">Web Design</h5>
+    <p class="area2-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident fuga qui.</p>
+    </div>
+     <div class="area2-imagecard3">
+    <div class="area2-image3"></div>
+    <h5 class="area2-h5">App Design</h5>
+    <p class="area2-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident fuga qui.</p>
+    </div>
+         <div class="area2-imagecard4">
+    <div class="area2-image4"></div>
+    <h5 class="area2-h5">App Development</h5>
+    <p class="area2-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident fuga qui.</p>
+    </div><!--"Services" div end-->
+</div><!--"Call to action" div open-->
+<div class="content-area3">
+    <div><h2 class="heading-action">CALL TO ACTION</h2></div>
+     <div class="area3-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur ipsam quod suscipit delectus,</div>
+    <div class="area3-text">blanditiis iste dicta architecto beatae quis provident quo  nihil error inventore ducimus.</div>
+    <div class="area3-btndiv"><button class="area3-btn">CALL TO ACTION</button></div>
+</div><!--"Call to action" div close-->
+        <div class="content-area4"><!--"Our pricing" div open-->
+            <h2 class="heading-pricing">OUR PRICING</h2>
+                <P class="area4-p">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur ipsam quod suscipit delectus,<br>
+                                    blanditiis iste dicta architecto beatae quis provident quo  nihil error inventore ducimus.</P>
+            <div class="price-div">                        
+                <div class="silver"><p>Silver</p><p class="price-p">99.99$</p></div>                    
+                <div class="gold"><p>Gold</p><p class="price-p">149.99$</p></div>                    
+                <div class="platinum"><p>Platinum</p><p class="price-p">249.99$</p></div>
+            </div><!--Price div close-->                        
+        </div><!--"Our pricing" div close-->
+    </div><!--"Main page div" close-->
+</div><!--"Main page div" close-->    
+</body>
+</html>
